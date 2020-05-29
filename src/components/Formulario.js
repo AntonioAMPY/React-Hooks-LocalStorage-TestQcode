@@ -58,6 +58,7 @@ const Formulario = () => {
       return;
     }
 
+    setError(false);
     // Peticion http por axios, con metodo POST (Se hace copia del state para que no se reemplce con spread operator)
     axios
       .post("https://httpbin.org/post", guardarDatos)
