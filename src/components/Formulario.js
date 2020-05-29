@@ -68,6 +68,17 @@ const Formulario = () => {
       .catch(function (error) {});
   };
 
+  // Funcion para resetear los valores
+
+  const ResetarValores = () => {
+      setGuardarDatos({
+        ...guardarDatos,
+        valor: 0,
+        trm: 0,
+        descripcion: "",
+      });
+    }
+    
   return (
     <Fragment>
       <div className="row">
@@ -97,14 +108,7 @@ const Formulario = () => {
           </button>
           <button
             className="btn btn-info w-25 float-right"
-            onClick={() => {
-              setGuardarDatos({
-                ...guardarDatos,
-                valor: 0,
-                trm: 0,
-                descripcion: "",
-              });
-            }}
+            onClick={() => ResetarValores()}
             type="reset"
           >
             Limpiar
