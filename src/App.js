@@ -1,4 +1,4 @@
-import React, {useEffect, useState, Fragment} from 'react';
+import React, {Fragment} from 'react';
 
 /* Components */
 
@@ -13,7 +13,7 @@ function App() {
 
       <div className="container">
             <Formulario/>
-        </div>
+      </div>
      
     </Fragment>
   );

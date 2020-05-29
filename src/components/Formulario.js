@@ -78,7 +78,7 @@ const Formulario = () => {
         descripcion: "",
       });
     }
-    
+
   return (
     <Fragment>
       <div className="row">
